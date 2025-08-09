@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+.bg-pistachio {
+  background-color: #75a4cd; /* replace with the pistachio color you want to use */
+}
+.bg-lightPistachio {
+    background-image: linear-gradient(79deg,#fcfced, #94badc 0%,#f1fcf7);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.search-bar-container {
+  /* padding-top: 10vh; */
+  width: 40%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.auth-form-container, .login-form, .register-form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form-container {
+  width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 50%;
+    
+
+  }
+
+
+  .name1, .name2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fullName {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .password, .confirmPass {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pass {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .city, .state {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  label {
+    text-align: left;
+    font-size: 20px;
+    padding: 0.25rem 0;
+  }
+
+  input {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .button {
+    font-size: 17px;
+    border: name;
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .link-btn {
+    background-color: none;
+    border-radius: 10px;
+    color: black;
+    text-decoration: underline;
+  }
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif, Helvetica;
+  font-size: 18px;
+}
+
+.profile-details label {
+  font-weight: bold;
+}
+
+.profile-details label, .profile-details span {
+  margin-bottom: 14px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+ 
+}

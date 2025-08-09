@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Karine",
+        "telephone": "01288320677",
+        "email": "Karine@gmail.com",
+        "password": "$scrypt$n=16384,r=8,p=1$+4CN/g/imCk+Tl0WN7xcTg$D1PcZFqgaLC5ztBxeuSqJcmDjkNrdRVTqWhM/SuGGQeu+gN29iVjdedhNrZeRSM2AD5qdIoFPwMVdQYoOl07NA",
+        "city": "cairo",
+        "address": "sheraton",
+        "card_number": "123",
+        "created_at": "2023-05-04T17:38:33.247+02:00",
+        "updated_at": "2023-05-04T17:38:33.247+02:00",
+        "id": 1
+    }
+]
