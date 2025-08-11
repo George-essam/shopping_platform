@@ -7,6 +7,9 @@ import React, { Navigate,useEffect, useState } from "react";
 import { STATUS } from "./status.js";
 import {useLocation, Link, useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
+// import Checkout from './components/Checkout';
+
+
 
 const Checkout = () => {
   const { cartItems, closeCart } = useShoppingCart();

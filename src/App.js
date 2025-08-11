@@ -11,7 +11,8 @@ import {Login} from './components/Login';
 import {Register} from './components/Register';
 import { useState } from 'react';
 import Profile from "./components/Profile";
-  
+import Checkout from './components/Checkout';
+
 
 
 const App = ()=>{
