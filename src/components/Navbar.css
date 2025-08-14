@@ -1,0 +1,112 @@
+/* Navbar base */
+.custom-navbar {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222 !important;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+.nav-links .nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.nav-links .nav-link.active {
+  border-bottom: 2px solid #007bff;
+  font-weight: 600;
+}
+
+.nav-links .nav-link:hover {
+  color: #007bff;
+}
+
+/* Search bar */
+.input-wrapper {
+  background-color: white;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 50px;
+  height: 2.5rem;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.input-wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.input-wrapper input {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 8px;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: #007bff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#search-icon:hover {
+  color: #0056b3;
+}
+
+/* Icons */
+.icon-group .icon-btn {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-group .icon-btn:hover {
+  transform: scale(1.08);
+  background-color: #6eacea;
+}
+
+/* Cart badge */
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #dc3545;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Responsive fixes */
+@media (max-width: 992px) {
+  .nav-actions {
+    justify-content: flex-start;
+  }
+}
+
