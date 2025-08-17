@@ -5,14 +5,15 @@
 
 /* Hero */
 .hero-section {
+  margin: 10px 0 0 0;
   position: relative;
   height: 85vh;
-  /* background: url("../imgs/bg3.jpg") center/cover no-repeat; */
   background: url("https://images.unsplash.com/photo-1521334884684-d80222895322") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
+
 
 .overlay {
   background: rgba(0, 0, 0, 0.45);

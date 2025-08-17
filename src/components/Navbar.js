@@ -34,7 +34,7 @@ const Navbar = () => {
         
         {/* Brand */}
         <NavbarBs.Brand as={NavLink} to="/" className="brand-name">
-          <i className="fas fa-gem me-2"></i> LA COLLECTION
+          <i className="fas fa-gem me-2"></i> Grand Bazar
         </NavbarBs.Brand>
 
         {/* Mobile Toggle */}
