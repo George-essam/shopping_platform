@@ -1,0 +1,15 @@
+.cart-footer {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.cart-footer button {
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.cart-footer button:hover {
+  background: #333;
+}

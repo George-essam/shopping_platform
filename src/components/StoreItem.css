@@ -1,0 +1,75 @@
+/* Card styling */
+.store-item-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image wrapper */
+.img-wrapper {
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-item-img {
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.store-item-card:hover .store-item-img {
+  transform: scale(1.05);
+}
+
+/* Title & Price */
+.store-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.store-item-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff;
+}
+
+/* Buttons */
+.add-btn {
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-weight: 500;
+}
+
+.qty-btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.buy-now-btn {
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.buy-now-btn:hover {
+  background: #333;
+  color: white;
+}

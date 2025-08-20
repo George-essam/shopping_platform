@@ -7,25 +7,39 @@ import './CartItem.css';
 const CartItem = ({ id, quantity }) => {
   const { removeItemFromCart } = useShoppingCart();
   const [item, setItem] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getItem = async () => {
-      const response = await fetch("http://fakestoreapi.com/products");
-      const data = await response.json();
-      setItem(data.find((i) => i.id === id) || null);
+      try {
+        setLoading(true);
+        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+        if (!response.ok) throw new Error("Failed to fetch product");
+        const data = await response.json();
+        setItem(data);
+      } catch (error) {
+        console.error("Error fetching product:", error);
+      } finally {
+        setLoading(false);
+      }
     };
+
     getItem();
   }, [id]);
 
-  if (!item) {
+  if (loading) {
     return <div className="loading-text">Loading...</div>;
+  }
+
+  if (!item) {
+    return <div className="error-text">Product not found</div>;
   }
 
   return (
     <Stack direction="horizontal" gap={3} className="cart-item">
       <img
         src={item.image}
-        alt="cart-img"
+        alt={item.title}
         className="cart-item-img"
       />
       <div className="me-auto cart-item-info">
@@ -39,7 +53,9 @@ const CartItem = ({ id, quantity }) => {
           {formatCurrency(item.price)}
         </div>
       </div>
-      <div className="total-price">{formatCurrency(item.price * quantity)}</div>
+      <div className="total-price">
+        {formatCurrency(item.price * quantity)}
+      </div>
       <Button
         variant="outline-danger"
         size="sm"
